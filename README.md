@@ -1,1 +1,1 @@
-deploy: https://projdrivenrecharge.onrender.com
+deploy: https://projdrivenrecharge-1.onrender.com
