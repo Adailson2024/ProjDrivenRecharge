@@ -5,7 +5,7 @@ CREATE TABLE carriers (
 );
 
 CREATE TABLE phones (
-    id SERIAL PRIMARY KEY,
+  id SERIAL PRIMARY KEY,
   number VARCHAR(20) NOT NULL UNIQUE,
   "carrierId" INT NOT NULL REFERENCES carriers(id),
   "name" VARCHAR(255) NOT NULL,
