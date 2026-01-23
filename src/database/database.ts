@@ -4,7 +4,12 @@ dotenv.config();
 
 const {Pool}=pg;
 const db=new Pool({
-    connectionString:process.env.DATABASE_URL
+    connectionString:process.env.DATABASE_URL,
+    ssl: {
+    rejectUnauthorized: false // Necessário para conexões externas no Render Free
+  }
 });
+
+
 
 export default db;
